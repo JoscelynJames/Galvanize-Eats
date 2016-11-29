@@ -18,7 +18,7 @@ Your post request should submit the user order. When you have successfully hit t
 
 ## Notes
 
-* CSS or SASS only- no styling frameworks!
+* Use a CSS Framework of your choice
 * You can use jQuery or plain JavaScript for DOM manipulation
 * Does not have to be responsive
 * Use feature-branch workflows
