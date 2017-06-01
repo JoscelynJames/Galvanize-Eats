@@ -4,7 +4,7 @@
 
 ## Import stories into Pivotal Tracker
 
-Import this [CSV](https://s3-us-west-2.amazonaws.com/lesson-plan-images/galvanize_eats_assessments/Q1+Assessment+Stories.csv) into a new project in Pivotal Tracker to get the requirements for this story. The new project should be prefixed with your cohort number. They are sorted into two epics that roughly align with the two pages, and they are prioritized. You may find it useful to size the stories before you begin.
+Import this [CSV](https://students-gschool-production.s3.amazonaws.com/uploads/asset/file/595/Q1_Project_Stories-Galvanize_Eats.csv) into a new project in Pivotal Tracker to get the requirements for this story. The new project should be prefixed with your cohort number. They are sorted into two epics that roughly align with the two pages, and they are prioritized. You may find it useful to size the stories before you begin.
 
 ## Use the Galvanize Eats repo as a base
 
