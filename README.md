@@ -68,6 +68,6 @@ deals.
 
 ```
 
-## HOW TO SUBMIT YOUR ASSESSMENT
+## HOW TO SUBMIT YOUR PROJECT
 
 Update the README in your project with a link to your deployed site and submit a pull request.
