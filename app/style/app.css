@@ -1,0 +1,38 @@
+body{
+  font-family: 'Poiret One', cursive;
+}
+
+.logo {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 2.8rem;
+}
+
+#info-cards {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+
+#info-cards > div > div > img {
+  height: 75px;
+}
+
+.hero.is-primary .title {
+  color: black;
+}
+
+.burger-gif {
+  background-image: url("https://media.giphy.com/media/11ZStfKZSXJN1S/giphy-downsized.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: cover;
+}
+
+.hero-body {
+  background-image: url("https://media.giphy.com/media/O8TeLhAK7cVq0/giphy-downsized.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: white;
+  background-size: contain;
+}
