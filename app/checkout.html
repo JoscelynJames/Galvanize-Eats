@@ -2,14 +2,79 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
-    <link rel="stylesheet" href="style/app.css">
+    <link rel="stylesheet" href="style/checkout.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta charset="utf-8">
     <title>Checkout</title>
   </head>
   <body>
+    <section class="hero is-primary is-large">
+      <div class="hero-head">
+        <header class="nav">
+          <div class="container">
+            <div class="nav-left">
+              <a class="nav-item">
+                <a href="app.html" class="logo">Galvanize Eats</a>
+              </a>
+            </div>
+            <span class="nav-toggle">
+              <span></span>
+              <span></span>
+              <span></span>
+            </span>
+            <div class="nav-right nav-menu">
+              <a class="nav-item is-active">
+                <img src="images/facebook.png"/>
+                Facebook
+              </a>
+              <a class="nav-item">
+                <img src="images/twitter.png"/>
+                Twitter
+              </a>
+              <a class="nav-item">
+                <img src="images/insta.png"/>
+                Instagram
+              </a>
+            </div>
+          </div>
+        </header>
+      </div>
+    </section> <!-- end of header -->
 
+    <section class="section ordering-section">
+      <container class="menu">
+        <div>
+          <h1>Menu</h1><br>
+          <label>Burgers</label>
+            <div class="tile select is-multiple">
+              <select class="burger-list" multiple size="2"></select>
+            </div>
+            <div>
+              <br>
+              <input class="input is-primary burger-quantity" type="text" placeholder="1 - 99">
+              <a class="button is-primary add-burger-to-order">Add to order</a>
+            </div>
+            <br>
+            <label>Pizza</label>
+              <div class="tile select is-multiple">
+                <select class="pizza-list" multiple size="3"></select>
+              </div>
+              <container class="container">
+                <br>
+                <input class="input is-primary pizza-quantity" type="text" placeholder="1 - 99">
+                <a class="button is-primary add-pizza-to-order">Add to order</a>
+              </container>
+        </div>
+      </container>
+
+      <section id="poop" class="section">
+        <div class="ordered-items">
+        </div>
+      </section>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="checkout.js"></script>
   </body>
 </html>

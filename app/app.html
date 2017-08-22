@@ -4,13 +4,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
     <link rel="stylesheet" href="style/app.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <meta charset="utf-8">
     <title>Galvanize Eats</title>
   </head>
   <body>
-
   <section class="hero is-primary is-large">
   <div class="hero-head">
     <header class="nav">
@@ -40,9 +38,6 @@
           </a>
           <span class="nav-item">
             <a class="button is-primary is-inverted">
-              <span class="icon">
-                <i class="fa fa-github"></i>
-              </span>
               <span class="center">Order Now</span>
             </a>
           </span>
@@ -50,20 +45,22 @@
       </div>
     </header>
   </div>
-
   <div class="hero-body burger-gif">
     <div class="container has-text-centered">
       <h1 class="title">
-        <a href="checkout.html">gFood - Delivered</a>
+        <a class="main-button button is-primary" href="checkout.html">gFood - Delivered</a>
       </h1>
     </div>
   </div>
-
+</section>
+  <container class="body-container">
   <containter id="info-cards" class="is-fluid">
     <div class="card">
       <div class="card-content">
-        <img src="images/bag.png">
-        <h1 class="title">Shop Online</h1>
+        <h1 class="title">
+          <img src="images/bag.png">
+          Shop Online
+        </h1>
         <p>
           Using our convenient web app, you'll get all the power of gFood
           without having to call your order in. Order in your pajamas, order 24
@@ -71,11 +68,12 @@
         </p>
       </div>
     </div>
-
     <div class="card">
       <div class="card-content">
-        <img src="images/rabbit.png">
-        <h1 class="title">Fast Delivery</h1>
+        <h1 class="title">
+          <img src="images/rabbit.png">
+          Fast Delivery
+        </h1>
         <p>
           You've never seen ordering this quick. Our proprietary ordering
           rocket ship delivery team allows you to spend less time being hungry,
@@ -84,11 +82,12 @@
         </p>
       </div>
     </div>
-
     <div class="card">
       <div class="card-content">
-        <img src="images/piggy-bank.gif">
-        <h1 class="title">Great Deals</h1>
+        <h1 class="title">
+          <img src="images/piggy-bank.gif">
+          Great Deals
+        </h1>
         <p>
           Money: You've got it, we want it. But let it never be said we're not
           incredibly fair! Burger sales? Check. Pizza sales? Check. Burger and
@@ -98,23 +97,25 @@
       </div>
     </div>
   </container>
-
   <footer class="footer">
   <div class="container">
-    <div class="content has-text-centered">
-      <p>
-        <strong>Bulma</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC ANS 4.0</a>.
-      </p>
-      <p>
-        <a class="icon" href="https://github.com/jgthms/bulma">
-          <i class="fa fa-github"></i>
-        </a>
-      </p>
+    <div class=" has-text-left">
+      <container>
+        <h1>Currently Delivering to...</h1>
+        <h1>Denver, Co</h1>
+        <br>
+      </container>
+      <container>
+        <h1>
+          Galvanize 2015
+          <img class="toothpick" src="images/Toothpick.png">
+          <small>&copy;</small>
+        </h1>
+      </container>
     </div>
   </div>
 </footer>
+</container>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="app.js"></script>

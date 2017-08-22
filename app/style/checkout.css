@@ -1,0 +1,60 @@
+html {
+  height: 100%;
+}
+
+.logo {
+  font-family: 'Cabin Sketch', cursive;
+  font-size: 2.8rem;
+}
+
+.ordering-section {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  border-bottom: 1px solid #d4d4d4;
+  border-right: 1px solid #d4d4d4;
+  box-shadow: 5px 3px 4px 4px #d4d4d4;
+}
+
+.order-section {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: 1;
+}
+
+.ordered-items {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+#poop {
+  border-bottom: 1px solid #d4d4d4;
+  border-right: 1px solid #d4d4d4;
+  box-shadow: 5px 3px 4px 4px #d4d4d4;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  margin-left: 30px;
+}
+
+.burger-quantity, .pizza-quantity {
+  height: 40px;
+  width: 80px;
+}
+
+.add-pizza-to-order, .add-burger-to-order {
+  height: 40px;
+}
