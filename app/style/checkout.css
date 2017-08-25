@@ -1,5 +1,6 @@
-html {
+html, body {
   height: 100%;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .logo {
@@ -9,9 +10,9 @@ html {
 
 .ordering-section {
   display: flex;
-  flex-wrap: nowrap;
   justify-content: space-around;
-
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .menu {
@@ -27,6 +28,10 @@ html {
   border-bottom: 1px solid #d4d4d4;
   border-right: 1px solid #d4d4d4;
   box-shadow: 5px 3px 4px 4px #d4d4d4;
+}
+
+.menu > div > h1 {
+  font-size: 2rem
 }
 
 .order-section {
@@ -45,9 +50,9 @@ html {
   border-right: 1px solid #d4d4d4;
   box-shadow: 5px 3px 4px 4px #d4d4d4;
   flex-grow: 1;
-  flex-shrink: 1;
-  flex-basis: auto;
   margin-left: 30px;
+  display: flex;
+    flex-flow: column;
 }
 
 .burger-quantity, .pizza-quantity {
@@ -57,4 +62,48 @@ html {
 
 .add-pizza-to-order, .add-burger-to-order {
   height: 40px;
+}
+
+.food-list {
+  display: inline-flex;
+  list-style: none;
+  justify-content: space-between;
+  order: 1;
+  padding: 4px;
+}
+
+.total {
+  display: flex;
+  flex-flow: column;
+  align-items: flex-end;
+  padding-top: 50px;
+  order: 2;
+  width: 100%;
+  border-top: 1px solid #d4d4d4;
+}
+
+.cust-input {
+  display: flex;
+  flex-direction: column;
+  width: 82%;
+  padding-left: 12%;
+  padding-right: 11%;
+  margin-bottom: 10%;
+  border-bottom: 1px solid #d4d4d4;
+  border-right: 1px solid #d4d4d4;
+  box-shadow: 5px 3px 4px 4px #d4d4d4;
+}
+
+.deliver-button {
+  margin-top: 40px;
+}
+
+.cust-input > div {
+  padding-bottom: 4%;
+  display: inline-flex;
+}
+
+.pizza-svg {
+  display: flex;
+  justify-content: center;
 }

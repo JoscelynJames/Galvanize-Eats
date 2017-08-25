@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+    <link rel="stylesheet" href="app/style/checkout.css">
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Checkout</title>
+  </head>
+  <body>
+    <section class="hero is-primary">
+      <container class="container is-fluid">
+        <div class="hero-head">
+          <header class="nav">
+            <div class="container is-fluid">
+              <div class="nav-left">
+                <a class="nav-item">
+                  <a href="index.html" class="logo">Galvanize Eats</a>
+                </a>
+              </div>
+              <div class="nav-right nav-menu">
+                <a class="nav-item">
+                  <img src="app/images/facebook.png"/>
+                  Facebook
+                </a>
+                <a class="nav-item">
+                  <img src="app/images/twitter.png"/>
+                  Twitter
+                </a>
+                <a class="nav-item">
+                  <img src="app/images/insta.png"/>
+                  Instagram
+                </a>
+              </div>
+            </div>
+          </header>
+        </div>
+      </container>
+    </section> <!-- end of header -->
+
+    <section class="section ordering-section">
+      <container class="container is-fluid menu">
+        <div>
+          <h1>Menu</h1><br>
+          <label>Burgers</label>
+            <div class="tile select is-multiple">
+              <select class="burger-list" multiple size="2"></select>
+            </div>
+            <div>
+              <br>
+              <input class="input is-primary burger-quantity" value="1" type="text" placeholder="1 - 99">
+              <a class="button is-primary add-burger-to-order">Add to order</a>
+            </div>
+            <br>
+            <label>Pizza</label>
+              <div class="tile select is-multiple">
+                <select class="pizza-list" multiple size="3"></select>
+              </div>
+              <container class="container is-fluid">
+                <br>
+                <input class="input is-primary pizza-quantity" value="1" type="text" placeholder="1 - 99">
+                <a class="button is-primary add-pizza-to-order">Add to order</a>
+              </container>
+        </div>
+      </container>
+
+      <section id="poop" class="section">
+        <div class="ordered-items">
+          <ol></ol>
+        </div>
+        <div class="container total">
+          <div>
+            <span> Total: $</span>
+            <a class="count">0.00</a>
+          </div>
+          <div>
+            <span> Tax: $</span>
+            <a class="tax">0.00</a>
+          </div>
+          <div>
+            <span> Sub Total: $</span>
+            <a class="sub-total">0.00</a></div>
+        </div>
+      </section>
+    </section>
+    
+    <div class="pizza-svg">
+      <svg
+      '"xmlns="http://www.w3.org/2000/svg"'
+      version="1.1"
+      width="50"
+      height="200">
+        <polyline points="2,3 25,50 49,3" stroke="#dba24a" fill="#ffd867" stroke-width="2"/>
+        <circle r="5" cx="14" cy="10" fill="#CE0000"/>
+        <circle r="5" cx="27" cy="20" fill="#CE0000"/>
+        <circle r="5" cx="25" cy="32" fill="#CE0000"/>
+        <circle r="5" cx="35" cy="11" fill="#CE0000"/>
+        <rect x="1" y="0" rx="3" ry="3" height="7" width="49" fill="#dba24a"/>
+        <line x1="5" x2="48" y1="6" y2="6" stroke="#d08d26" stroke-width="2"/>
+      </svg>
+    </div>
+
+    <section class="container section cust-input">
+      <label>Name</label>
+      <input class="input is-primary name" type="text" placeholder="First Last">
+      <label>Number</label>
+      <input class="input is-primary phone-number" type="text" placeholder="303-555-5555">
+      <label>Adress</label>
+      <input class="input is-primary street" type="text" placeholder="1234 S Grant Street">
+      <!-- <div class="control"> -->
+        <input class="input is-primary city" type="text" placeholder="city , state">
+        <input class="input is-primary zip" type="text" placeholder="80021">
+      <!-- </div> -->
+        <a class="button is-primary is-large deliver-button" type="submit">Deliver it!</a>
+    </section>
+
+    <footer class="footer">
+    <div class="container">
+      <div class=" has-text-left">
+        <container>
+          <h1>Currently Delivering to...</h1>
+          <h1>Denver, Co</h1>
+          <br>
+        </container>
+        <container>
+          <h1>
+            Galvanize 2015
+            <small>&copy;</small>
+          </h1>
+        </container>
+      </div>
+    </div>
+  </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app/checkout.js"></script>
+  </body>
+</html>
