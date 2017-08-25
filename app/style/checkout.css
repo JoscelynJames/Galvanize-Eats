@@ -105,5 +105,7 @@ html, body {
 
 .pizza-svg {
   display: flex;
-  justify-content: center;
+  flex-flow: column;
+  width: 100px;
+  height: 200px
 }

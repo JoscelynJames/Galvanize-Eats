@@ -2,6 +2,8 @@
 <html>
   <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.1/css/bulma.min.css">
+    <link rel="stylesheets" heref="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.4.3/js/plugins/foundation.magellan.min.js">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
     <link rel="stylesheet" href="app/style/checkout.css">
     <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -39,7 +41,7 @@
       </container>
     </section> <!-- end of header -->
 
-    <section class="section ordering-section">
+    <section class="section ordering-section" data-magellan-target="first">
       <container class="container is-fluid menu">
         <div>
           <h1>Menu</h1><br>
@@ -84,21 +86,10 @@
         </div>
       </section>
     </section>
-    
-    <div class="pizza-svg">
-      <svg
-      '"xmlns="http://www.w3.org/2000/svg"'
-      version="1.1"
-      width="50"
-      height="200">
-        <polyline points="2,3 25,50 49,3" stroke="#dba24a" fill="#ffd867" stroke-width="2"/>
-        <circle r="5" cx="14" cy="10" fill="#CE0000"/>
-        <circle r="5" cx="27" cy="20" fill="#CE0000"/>
-        <circle r="5" cx="25" cy="32" fill="#CE0000"/>
-        <circle r="5" cx="35" cy="11" fill="#CE0000"/>
-        <rect x="1" y="0" rx="3" ry="3" height="7" width="49" fill="#dba24a"/>
-        <line x1="5" x2="48" y1="6" y2="6" stroke="#d08d26" stroke-width="2"/>
-      </svg>
+
+    <div class="container pizza-svg">
+      <img class="slice" src="app/images/slice.svg"/>
+      <img class="pizza" src="app/images/wholepizza.svg"/>
     </div>
 
     <section class="container section cust-input">
@@ -135,5 +126,6 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="app/checkout.js"></script>
+    <script src="app/pizza.js"></script>
   </body>
 </html>
